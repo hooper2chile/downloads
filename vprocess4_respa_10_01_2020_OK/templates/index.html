@@ -1,0 +1,259 @@
+{% extends "base.html" %}
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/my_javascript.js') }}"></script>
+
+<section>
+  <form id="process" method="POST" action='#'>
+  <fieldset>
+      <select name="selection" id="select">
+            <option value="grabar" selected>Iniciar DataLogger</option>
+            <option value="no_grabar">Detener DataLogger</option>
+            <option value="reiniciar">Reiniciar</option>
+            <option value="apagar">Apagar</option>
+            <option value="limpiar">Borrar Archivos</option>
+      </select>
+
+      <input type="checkbox" id="confirm">
+      <button class="button" type="submit">+</button>
+  </fieldset>
+</form>
+</section>
+
+
+
+<form id="setpoints" method="POST" action='#'>
+    <font color="white">
+    <div class="caja_izquierda_arriba">Bomba 1 [RPM]: <br>
+              <input type="number"
+                     id="alimentar"
+                     style="width: 50px;"
+                     value=""
+                     MIN="5"
+                     MAX="150"
+                     step="1"
+              />
+              <button  type="submit" class="button_apply"> + </button>
+              <br><input  type="checkbox" id="alimentar_rst" /> Deshabilitar
+              <br><input hidden type="checkbox" id="alimentar_dir" />
+    </div>
+    </font>
+
+
+    <div hidden class="caja_central_arriba"> Mezclar [rpm]:
+                <input type="number"
+                       id="mezclar"
+                       style="width: 50px;"
+                       MIN="0"
+                       MAX="1500"
+                       step="1"
+                       value=""
+                 />
+                 <button  type="submit" class="button_apply"> + </button>         <br>
+                 <input  type="checkbox" id="mezclar_rst" /> Deshabilitar
+    </div>
+
+
+    <div class="caja_central">
+      <!CAJA CENTRAL PARA EL DIBUJO>
+    </div>
+
+    <font color="white">
+    <div class="caja_izquierda_centro"> Temperatura [ºC]: <br>
+            <input type="number"
+                   id="temperatura"
+                   value="25"
+                   style="width: 50px;"
+                   MIN="0"
+                   MAX="70"
+                   step="1"
+            />
+
+            <button  type="submit" class="button_apply"> + </button>     <br>
+            <input  type="checkbox" id="temperatura_rst" /> Deshabilitar   <br>
+            <input hidden type="checkbox" id="temperatura_dir" />
+    </div>
+    </font>
+
+
+    <div hidden class="caja_izquierda_abajo"> Configurar pH: <br>
+            <input type="number"
+                   id="ph"
+                   value=""
+                   style="width: 50px;"
+                   MIN="0"
+                   MAX="14"
+                   step="0.1"
+            />
+
+            <button  type="submit" class="button_apply"> + </button>     <br>
+            <input  type="checkbox" id="ph_rst" /> Deshabilitar   <br>
+            <input  type="checkbox" id="ph_dir" /> Invertir
+    </div>
+
+    <!-- Medicion de Temperaturas -->
+    <font color="white">
+    <div class="caja_derecha_arriba1" id="med1"></div>
+    <div class="caja_derecha_arriba2" id="med2"></div>
+    <div class="caja_derecha_arriba3" id="med3"></div>
+    </font>
+
+    <font color="white">
+    <div class="caja_derecha_abajo">Bomba 2 [RPM]:
+            <br><input  type="number"
+                    id="descargar"
+                    style="width: 50px;"
+                    MIN="5"
+                    MAX="150"
+                    step="1"
+                    value=""
+            />
+                <button  type="submit" class="button_apply"> + </button>
+            <br><input  type="checkbox" id="descargar_rst"/> Deshabilitar
+    </div>
+    </font>
+
+    <!-- FICHA DE PRODUCTO CONCHA Y TORO -->
+
+
+    <!caja6: ficha de producto: densidad>
+        <div class="caja6">
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          <div id="densidad_div_id">Densidad:</div>
+            <input type="number"
+                         id="densidad_input_id"
+                         style="width: 50px;"
+                         value="1"
+                         MIN="0"
+                         MAX="2000"
+                         step="0.1"
+            />
+            <button  type="submit" class="button_apply"> + </button>
+    </div>
+
+    <!caja7: ficha de producto: yan>
+        <div class="caja7">
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          <div id="yan_div_id">Yan:</div>
+            <input type="number"
+                         id="yan_input_id"
+                         style="width: 50px;"
+                         value="1"
+                         MIN="0"
+                         MAX="500"
+                         step="0.1"
+            />
+            <button  type="submit" class="button_apply"> + </button>
+    </div>
+
+    <!caja8: ficha de producto: pH>
+        <div class="caja8">
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          <div id="ph_div_id">pH:</div>
+            <input type="number"
+                         id="ph_input_id"
+                         style="width: 50px;"
+                         value="1"
+                         MIN="0"
+                         MAX="14"
+                         step="0.1"
+            />
+            <button  type="submit" class="button_apply"> + </button>
+    </div>
+
+    <!caja9: ficha de producto: brix>
+        <div class="caja9">
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          <div id="brix_div_id">Brix:</div>
+            <input type="number"
+                         id="brix_input_id"
+                         style="width: 50px;"
+                         value="1"
+                         MIN="0"
+                         MAX="100"
+                         step="0.1"
+            />
+            <button  type="submit" class="button_apply"> + </button>
+    </div>
+
+    <!caja10: ficha de producto: Acidez Total>
+        <div class="caja10">
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          <div id="acidez_div_id">Acidez Total:</div>
+            <input type="number"
+                         id="acidez_input_id"
+                         style="width: 50px;"
+                         value="1"
+                         MIN="0"
+                         MAX="14"
+                         step="0.1"
+            />
+            <button  type="submit" class="button_apply"> + </button>
+    </div>
+
+    <font color="white">
+    <!caja11: ficha de producto: fundo>
+        <div class="caja11">
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          <div id="fundo_div_id">Fundo:</div>
+            <input type="text"
+                         id="fundo_input_id"
+                         style="width: 50px;"
+                         value="fundo"
+            />
+            <button  type="submit" class="button_apply"> + </button>
+        </div>
+    </font>
+
+    <font color="white">
+    <!caja12: ficha de producto: cepa>
+        <div class="caja12">
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          <div id="cepa_div_id">Cepa:</div>
+            <input type="text"
+                         id="cepa_input_id"
+                         style="width: 50px;"
+                         value="cepa"
+            />
+            <button  type="submit" class="button_apply"> + </button>
+        </div>
+    </font>
+
+    <font color="white">
+    <!caja13: ficha de producto: >
+        <div class="caja13">
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          <div id="lote_div_id">Nº Lote:</div>
+            <input type="number"
+                  id="lote_input_id"
+                  style="width: 50px;"
+                  value="1"
+                  MIN="0"
+                  MAX="1000"
+                  step="1"
+            />
+            <button  type="submit" class="button_apply"> + </button>
+        </div>
+    </font>
+
+    <font color="white">
+    <!caja14: ficha de producto: >
+        <div class="caja14">
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          <div id="dosis_div_id">Dosis levadura:</div>
+            <input type="number"
+                  id="dosis_input_id"
+                  style="width: 50px;"
+                  value="1"
+                  MIN="0"
+                  MAX="1000"
+                  step="0.01"
+            />
+            <button  type="submit" class="button_apply"> + </button>
+        </div>
+    </font>
+
+
+
+</form>
+<!-- test -->
+{% endblock %}

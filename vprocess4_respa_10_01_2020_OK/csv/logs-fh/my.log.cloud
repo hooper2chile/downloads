@@ -1,0 +1,34 @@
+Starting sync...
+Collecting local and remote file information...
+Found 1 local files and 537 remote files
+
+1 local files has changed
+[0001/0001] Updating gdrive_sync.txt -> vprocess/gdrive_sync.txt
+Sync finished in 13.29710722s
+Starting sync...
+Collecting local and remote file information...
+Found 1 local files and 537 remote files
+
+1 local files has changed
+[0001/0001] Updating gdrive_sync.txt -> vprocess/gdrive_sync.txt
+Sync finished in 9.70092797s
+Starting sync...
+Collecting local and remote file information...
+Found 1 local files and 537 remote files
+
+1 local files has changed
+[0001/0001] Updating gdrive_sync.txt -> vprocess/gdrive_sync.txt
+Sync finished in 9.213320552s
+Starting sync...
+Collecting local and remote file information...
+Found 5 local files and 537 remote files
+
+4 remote files are missing
+[0001/0004] Uploading backup__Fecha__27-09-19__Hora__08_42_12__PROCESO.csv -> vprocess/backup__Fecha__27-09-19__Hora__08_42_12__PROCESO.csv
+[0002/0004] Uploading backup__Fecha__27-09-19__Hora__08_42_12__T_MOSTO.csv -> vprocess/backup__Fecha__27-09-19__Hora__08_42_12__T_MOSTO.csv
+[0003/0004] Uploading backup__Fecha__27-09-19__Hora__08_42_12__T_PROMEDIO.csv -> vprocess/backup__Fecha__27-09-19__Hora__08_42_12__T_PROMEDIO.csv
+[0004/0004] Uploading backup__Fecha__27-09-19__Hora__08_42_12__T_SOMBRERO.csv -> vprocess/backup__Fecha__27-09-19__Hora__08_42_12__T_SOMBRERO.csv
+
+1 local files has changed
+[0001/0001] Updating gdrive_sync.txt -> vprocess/gdrive_sync.txt
+Sync finished in 16.81297154s

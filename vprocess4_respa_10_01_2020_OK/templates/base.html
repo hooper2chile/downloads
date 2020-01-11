@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    {% if title_html %}
+	    <title> {{ title_html }} </title>
+    {% else %}
+	    <title>BIOCL BIOREACTOR</title>
+    {% endif %}
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/socket.io.min.js') }}"></script>
+  </head>
+
+  <body>
+    <header> <img src="{{ url_for('static', filename='stylesheets/biocl.jpg') }}" style="width:650px;height:120px;"> </header>
+    <nav>
+      <ul>
+        <li><a href="/calibrar">Calibrar</a></li>
+        <li><a href="/remontaje">Remontaje</a></li>
+        <li><a href="/">Proceso</a></li>
+        <li><a href="/graphics">Tiempo Real</a></li>
+        <li><a href="/dbase">Base de Datos</a></li>
+      </ul>
+    </nav>
+
+  <div class="centrar">
+    <section>
+      {% block content %}
+
+      {% endblock %}
+      <!--
+        <aside class="footer">
+           <h3> Ingeniero Civil Electrónico </h3>
+                <p> Email: <a href="mailto:felipe.hooper.c@gmail.com">Correo electrónico </a></p>
+        </aside>
+      -->
+    </section>
+  </div>
+    <footer>
+      &emsp;&emsp;&emsp;
+      <h3> <a href="http://www.biocl.cl/">BIOCL, Todos los derechos reservados. </a> </h3>
+      Sobre el autor: <a href="mailto:felipe.hooper.c@gmail.com">Correo electrónico</a>
+    </footer>
+  </body>
+</html>

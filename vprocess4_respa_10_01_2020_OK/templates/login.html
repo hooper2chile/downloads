@@ -1,0 +1,51 @@
+  <head>
+    <meta charset="utf-8">
+    <title>Credenciales Bioreator</title>
+    <!link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+
+  </head>
+
+
+
+    {% extends "base.html" %}
+    {% block content %}
+    <div id="cuerpo" class="caja_login">
+                <form id="form-login" action="" method="post" autocomplete="off">
+
+                    <p><label >Nombre de Usuario:</label></p>
+                        <input name="username"
+                               type="text"
+                               id="usuario"
+                               placeholder="Ingresar Usuario"
+                               autofocus=""
+                               required=""
+                               value="{{ request.form.username }}"
+                        >
+                    </p>
+
+                    <p><label>Contraseña:</label></p>
+                        <input name="password"
+                               type="password"
+                               id="contrasenia"
+                               placeholder="Ingresar Contraseña"
+                               required=""
+                               value="{{ request.form.password }}"
+                        >
+                    </p>
+
+                    <p id="bot">
+                      <input type="submit"
+                             id="submit"
+                             name="submit"
+                             value="Ingresar"
+                             class="boton"
+                      >
+                    </p>
+
+                </form>
+                {% if error %}
+                    <p class="error"><strong></strong> {{ error }}
+                {% endif %}
+      </div>
+{% endblock %}

@@ -1,0 +1,6 @@
+sudo ps aux | grep python | grep -v "grep python" | awk '{print $2}' | sudo xargs kill -9 &
+
+rm -rf *.pyc &
+rm -rf database/*.pyc &
+rm -rf log/*.log
+rm -rf *.txt

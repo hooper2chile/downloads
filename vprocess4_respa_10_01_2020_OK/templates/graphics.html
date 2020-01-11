@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+    <!script type="text/javascript" src="/static/js/Chart.js"> <!/script>
+    <!script type="text/javascript" charset="utf-8" src="/static/js/my_graphics.js"> <!/script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/Chart.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/my_graphics.js') }}"></script>
+
+
+
+    <section>
+      <fieldset>
+        <p> Configurar Ventana:
+        <input type="number"
+               id="real_time"
+               value="10"
+               MIN="0"
+               MAX="7200"
+               step="1"
+        /> [Muestras]
+        <button  type="submit" class="button" onclick="my_chart()"> + </button></p>
+      </fieldset>
+    </section>
+
+
+    <div id="med1_g"></div>
+    <div id="ph_g"></div>
+      <canvas id="myChart"  width="100" height="35"></canvas>
+
+    <div id="med3_g"></div>
+      <canvas id="myChart3" width="100" height="35"></canvas>
+
+    <div id="med2_g"></div>
+      <canvas id="myChart2" width="100" height="35"></canvas>
+{% endblock %}

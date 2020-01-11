@@ -1,0 +1,532 @@
+<!Modelos de caja>
+
+body{
+  background-color: #F5F5F5;
+
+}
+
+header{
+  text-align: center;
+  background: white;
+  font-size: 70px;
+  font-family: verdana;
+}
+
+section{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+li {
+    float: left;
+    border-right: 4px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+nav{
+  margin-right: auto;
+  margin-left: auto;
+  background-color: lightblue;
+  height: 40px;
+  font-size: 16px;
+  font-family: verdana;
+  text-align: center;
+}
+
+aside{
+  margin-top: 200px;
+
+}
+
+footer{
+  font-size: 16px;
+  background: #54b5db;
+  height: 70px;
+  text-align: center;
+  margin-top: -20px;
+  height: 100px;
+}
+
+fieldset {
+  padding: 1em;
+  font:100%/1 sans-serif;
+  margin-right:20px;
+  margin-top:20px;
+  text-align: center;
+  }
+
+.caja_izquierda_arriba{
+  font-size: 16px;
+  font-family: verdana;
+  background: rgb(65, 182, 230);
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-top: 40px; /*100*/
+  margin-bottom: -140px; /*25s*/
+  margin-right: -50px;
+  text-align: left;
+
+  margin-left: 60px;
+  border-radius: 50px;
+}
+
+
+.caja_central_arriba{
+  font-size: 16px;
+  font-family: verdana;
+  width: 400px;
+  height: 78px;
+  margin-top: 50px;
+  margin-right: 40px;
+  margin-bottom: 1px;
+  text-align: center;
+  border: 2px solid lightblue;
+  margin-left: 260px;
+  background: rgb(65, 182, 230);
+  border-radius: 50px;
+
+}
+
+/*cajas color medicion de temperatura*/
+.caja_derecha_arriba1{
+  font-size: 18px;
+  font-family: verdana;
+  background: #004579;/*YellowGreen;#004579;*/
+  width: 230px;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid lightblue;
+  margin-right: 150px;
+  text-align: center;
+  margin-left: 610px;
+
+  margin-bottom: 10px;
+  margin-top: -550px;
+  border-radius: 50px;
+}
+
+.caja_derecha_arriba2{
+  font-size: 18px;
+  font-family: verdana;
+  background: #004579;/*YellowGreen;*/
+  width: 230px;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid lightblue;
+  margin-right: 150px;
+  text-align: center;
+  margin-left: 610px;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+
+.caja_derecha_arriba3{
+  font-size: 18px;
+  font-family: verdana;
+  background: #004579; /*YellowGreen;*/
+  width: 230px;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid lightblue;
+  margin-right: 150px;
+  text-align: center;
+  margin-left: 610px;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+/*cajas color medicion de temperatura*/
+
+.caja_izquierda_centro{
+  font-size: 16px;
+  font-family: verdana;
+  background: #54b5db;/*rgb(65, 182, 230);*/
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid #000;/*lightblue;*/
+  margin-top: -320px;
+  margin-right: -150px;
+  text-align: left;
+
+  margin-bottom: 250px;
+  margin-left: 60px;
+  border-radius: 50px;
+}
+
+.caja_izquierda_abajo{
+  font-size: 16px;
+  font-family: verdana;
+  background: #54b5db; /*rgb(65, 182, 230);*/
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-top: 2px;
+  margin-right: -50px;
+  text-align: left;
+
+  margin-bottom: 110px;
+  margin-left: 60px;
+  border-radius: 50px;
+}
+
+.caja_derecha_abajo{
+  font-size: 16px;
+  font-family: verdana;
+  background: #54b5db; /*rgb(65, 182, 230);*/
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-right: 150px;
+  text-align: left;
+  margin-left: 610px;
+
+  margin-top: 110px;
+  margin-bottom: -20px;
+  border-radius: 50px;
+}
+
+
+
+.caja_central{
+  background-image: url("biocl-01.svg");/*url("bioreactor.svg");*/
+  font-size: 16px;
+  font-family: verdana;
+  width: 300px;
+  height: 450px;
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 2px solid lightblue;
+  margin-left: 305px;
+}
+
+
+.caja_login{
+  font-size: 18px;
+  font-family: verdana;
+  width: 700px;
+  height: 350px;
+  margin-top: 50px;
+  margin-right: 40px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  border: 2px solid lightblue;
+  background: rgb(0, 120, 150);
+  position: center;
+  border-radius: 50px;
+
+}
+
+.centrar{
+  /*margin-left: 100px;*/
+  /*margin-top: -50px;*/
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* botom + */
+.button {
+    border-radius: 12px;
+    position: relative;
+    background-color: red;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 7px;
+    width: 50px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+.button_apply {
+    border-radius: 12px;
+    position: relative;
+    background-color: #fff;
+    border: none;
+    font-size: 24px;
+    color: #000;
+    padding: 5px;
+    width: 45px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button_apply:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button_apply:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+/* botom + */
+
+.caja_calibrar_medidas {
+  font-size: 16px;
+  font-family: verdana;
+  background: rgb(65, 182, 230);
+  width: 1100px;
+  height: 600px;
+  padding: 20px;
+  border: 2px solid lightblue;
+  margin-top: 2px;
+  margin-right: -50px;
+  text-align: left;
+
+  margin-bottom: 110px;
+  margin-left: 60px;
+  border-radius: 50px;
+}
+
+.caja_ph {
+  position: relative;
+  font-size: 16px;
+  font-family: verdana;
+  background: rgb(65, 182, 230);
+  width: 300px;
+  height: 450px;
+  padding: 20px;
+  border: 2px solid lightblue;
+  margin-top: 2px;
+  margin-right: -50px;
+  text-align: left;
+
+  margin-bottom: 110px;
+  margin-left: 60px;
+  border-radius: 50px;
+}
+
+
+
+/*Ficha producto vino concha y toro*/
+.caja6 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;/*YellowGreen;#004579;*/
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: -470px;
+    margin-right: -50px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 880px;
+    border-radius: 20px;
+}
+
+.caja7 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;/*YellowGreen;#004579;*/
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: 10px;
+    margin-right: -50px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 880px;
+    border-radius: 20px;
+}
+
+.caja8 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;/*YellowGreen;#004579;*/
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: 10px;
+    margin-right: -50px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 880px;
+    border-radius: 20px;
+}
+
+.caja9 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;/*YellowGreen;#004579;*/
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: 10px;
+    margin-right: -50px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 880px;
+    border-radius: 20px;
+}
+
+/*acidez*/
+.caja10 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;/*YellowGreen;#004579;*/
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: 10px;
+    margin-right: -50px;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 880px;
+    border-radius: 20px;
+}
+
+/*fundo*/
+.caja11 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;/*YellowGreen;#004579;*/
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: -585px;
+    margin-right: -50px;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-left: 1110px;
+    border-radius: 20px;
+}
+
+/*cepa*/
+.caja12 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;/*YellowGreen;#004579;*/
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: 10px;
+    margin-right: -50px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 1110px;
+    border-radius: 20px;
+}
+
+/*lote*/
+.caja13 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;/*YellowGreen;#004579;*/
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: 10px;
+    margin-right: -50px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 1110px;
+    border-radius: 20px;
+}
+
+
+/*dosis*/
+.caja14 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;/*YellowGreen;#004579;*/
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: 10px;
+    margin-right: -50px;
+    text-align: left;
+    margin-bottom: 400px;
+    margin-left: 1110px;
+    border-radius: 20px;
+}

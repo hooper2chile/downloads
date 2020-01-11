@@ -1,0 +1,222 @@
+
+.caja1 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    text-align: left;
+    margin-left: 80px;
+    border-radius: 20px;
+}
+
+
+
+.caja_central{
+  background-image: url("biocl-01.svg"); /*bioreactor2.svg*/
+  font-size: 16px;
+  font-family: verdana;
+  width: 300px;
+  height: 450px;
+  margin-top: -110px;/*-110px;*/
+  margin-right: 40px;
+  margin-bottom: 130px;/*130px;*/
+  text-align: center;
+  border: 2px solid lightblue;
+  margin-left: 310px;
+}
+
+
+.caja3 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: -480px;
+    margin-right: -50px;
+    text-align: left;
+    margin-bottom: 190px;
+    margin-left: 80px;
+    border-radius: 20px;
+}
+
+.caja4 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;/*YellowGreen;#004579;*/
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: -180px;
+    margin-right: -50px;
+    text-align: left;
+    margin-bottom: 12px;
+    margin-left: 80px;
+    border-radius: 20px;
+}
+
+
+.caja5 {
+    font-size: 16px;
+    font-family: verdana;
+    background: #54b5db;/*YellowGreen;#004579;*/
+    width: 200px;
+    height: 75px;
+    padding: 10px;
+    border: 2px solid #000;
+    margin-top: 10px;
+    margin-right: -50px;
+    text-align: left;
+    margin-bottom: 142px;
+    margin-left: 80px;
+    border-radius: 20px;
+}
+
+
+/*cajas color medicion de temperatura*/
+.caja_derecha_arriba1{
+  font-size: 18px;
+  font-family: verdana;
+  background: #004579;/*YellowGreen;#004579;*/
+  width: 230px;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid lightblue;
+  margin-right: 150px;
+  text-align: center;
+  margin-left: 620px;
+
+  margin-bottom: 10px;
+  margin-top: -550px;
+  border-radius: 50px;
+}
+
+.caja_derecha_arriba2{
+  font-size: 18px;
+  font-family: verdana;
+  background: #004579;/*YellowGreen;*/
+  width: 230px;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid lightblue;
+  margin-right: 150px;
+  text-align: center;
+  margin-left: 620px;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+
+.caja_derecha_arriba3{
+  font-size: 18px;
+  font-family: verdana;
+  background: #004579; /*YellowGreen;*/
+  width: 230px;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid lightblue;
+  margin-right: 150px;
+  text-align: center;
+  margin-left: 620px;
+
+  margin-bottom: 350px;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+/*cajas color medicion de temperatura*/
+
+
+.centrar{
+/*  margin-left: -40px; */
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+
+
+
+/*Barra ON OFF Remontaje*/
+.switch {
+  position: relative;
+
+  /*padding: 10px;*/
+  /*border: 2px solid lightblue;*/
+  margin-top: 5px;
+  /*margin-bottom: 15px;*/
+  margin-right: 5px;
+  margin-left: 5px;
+  /*text-align: left;*/
+
+  /*border-radius: 50px;*/
+
+
+  display: inline-block;
+  width: 60px;
+  height: 30px;  /*34*/
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*Barra ON OFF Remontaje*/

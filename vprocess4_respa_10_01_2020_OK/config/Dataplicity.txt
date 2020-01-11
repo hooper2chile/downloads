@@ -1,0 +1,5 @@
+1) ingresar en la pagina de dataplicity(.com), entrar con email y passwords de Felipe Hooper (datos en llavero osX). Luego correr en el terminar de la Raspberry Pi el siguiente codigo y ejecutar
+
+pi@raspberry: $  curl https://www.dataplicity.com/lkya9stm.py | sudo python
+
+2)volver a la pagina de dataplicity y seleccionar el equipo correspondiente para su control via terminal en navegador web.

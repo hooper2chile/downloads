@@ -1,0 +1,25 @@
+Instalado platformio hacer
+
+cp config/platformio firmware/uc_master (o uc_slave)
+
+Chmod 755 platformio
+./platformio run —-target upload
+
+Esto genera:
+Error: Unknown board ID 'nano_optiboot'
+
+Lo cual necesitamos para crear la carpeta: ~/.platformio
+
+
+Entonces, una vez creada esa carpeta, hacer:
+
+cp nano_obtiboot.json ~/.platformio/platforms/atmelavr/boards/.
+
+Y luego Estando en firmware, repetir:
+
+./platformio run —-target upload
+
+La primera vez que funciona se demora por que descarga los paquetes necesarios, luego es mucho más rápido.
+
+
+READY! De ahora en adelante siempre funcionara a no ser que sea borrada la carpeta .plataformio del directorio Home.

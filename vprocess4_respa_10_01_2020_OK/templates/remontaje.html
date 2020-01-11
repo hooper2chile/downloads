@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/socket.io.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/remontaje.js') }}"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/remontaje.css') }}">
+
+    <br>
+    <br>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <font face="verdana" color="black">Habilitar Remontaje</font>
+    <label class="switch">
+      <input  type="checkbox" id="rm_enable_input_id" />
+      <span class="slider round"></span>
+    </label>
+
+
+  <form id="remontaje_formulario" method="POST" action='#'> <!--form_id: input id -->
+    <!caja1: frecuencia remontaje>
+        <div class="caja1">
+          <div id="rm_periodo_div_id">Periodo [Min]:</div>
+            <input type="number"
+                         id="rm_periodo_input_id"
+                         value="30"
+                         style="width: 50px;"
+                         MIN="2"
+                         MAX="1440"
+                         step="1"
+            />
+        </div>
+
+
+    <div class="caja_central">
+      <!CAJA CENTRAL PARA EL DIBUJO>
+    </div>
+
+
+    <!caja3: duracion remontaje>
+        <div class="caja3">
+          <div id="rm_duracion_div_id">Tiempo Encendido [Min]:</div>
+            <input type="number"
+                         id="rm_duracion_input_id"
+                         style="width: 50px;"
+                         value="30"
+                         MIN="1"
+                         MAX="59"
+                         step="1"
+            />
+       </div>
+
+
+    <!caja4: dias remontaje>
+        <div class="caja4">
+          <div id="rm_ciclo_div_id">Total Días [Días]:</div>
+            <input type="number"
+                         id="rm_ciclo_input_id"
+                         style="width: 50px;"
+                         value="1"
+                         MIN="0"
+                         MAX="20"
+                         step="1"
+            />
+            <button  type="submit" class="button_apply"> + </button>
+          </div>
+
+
+    <!caja5: flujo de remontaje>
+        <div class="caja5">
+          &emsp;&emsp;&emsp;&emsp;&emsp;
+          <div id="rm_flujo_div_id">Flujo [L/min]:</div>
+            <input type="number"
+                         id="rm_flujo_input_id"
+                         style="width: 50px;"
+                         value="0"
+                         MIN="0"
+                         MAX="3"
+                         step="0.1"
+            />
+            <button  type="submit" class="button_apply"> + </button>
+          </div>
+
+
+
+    <font color="white">
+    <div class="caja_derecha_arriba1" id="med1"></div>
+    <div class="caja_derecha_arriba2" id="med2"></div>
+    <div class="caja_derecha_arriba3" id="med3"></div>
+    </font>
+
+
+</form>
+
+<br>
+<br>
+<br>
+{% endblock %}

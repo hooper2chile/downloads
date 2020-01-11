@@ -1,0 +1,167 @@
+<head>
+  <meta charset="utf-8">
+  <title>Calibración de Instrumentos</title>
+</head>
+{% extends "base.html" %}
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/calibrar.js') }}"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/calibrar.css') }}">
+
+<div class="centrar">
+
+<!calibrar_ph>
+<form id="calibrar_ph" method="POST" action='#'>
+<div class="caja1">
+    <h4>Calibración T. Sombrero</h4>
+
+    <div id="med1_c">med1_c</div><br>
+    <select id="medx_ph">
+          <option value="med1" selected>Medición 1</option>
+          <option value="med2"         >Medición 2</option>
+    </select>
+    <div>
+          <input type="number"
+                 id="ph"
+                 style="width: 50px;"
+                 value="50"
+                 MIN="0"
+                 MAX="100"
+                 step="1"
+          />
+          <button  type="submit" class="button_apply"> + </button>
+    </div>
+    <div id="ph1_set" ></div>
+    <div id="iph1_set"></div>
+    <div id="ph2_set" ></div>
+    <div id="iph2_set"></div>
+</div>
+</form><br><br>
+<!calibrar_ph>
+
+
+
+
+<!calibrar_temp>
+<form id="calibrar_temp" method="POST" action='#'>
+<div class="caja2">
+    <h4>Calibración T. Mosto</h4>
+
+    <div id="med3_c">med3_c</div><br>
+    <select id="medx_temp">
+          <option value="med1" selected>Medición 1</option>
+          <option value="med2"         >Medición 2</option>
+    </select>
+    <div>
+          <input type="number"
+                 id="temp"
+                 style="width: 50px;"
+                 value="50"
+                 MIN="0"
+                 MAX="100"
+                 step="1"
+          />
+          <button  type="submit" class="button_apply"> + </button>
+    </div>
+    <div id="temp1_set" ></div>
+    <div id="itemp1_set"></div>
+    <div id="temp2_set" ></div>
+    <div id="itemp2_set"></div>
+</div>
+</form><br><br>
+<!calibrar_temp>
+
+
+
+<!calibrar_od>
+<form hidden id="calibrar_od" method="POST" action='#'>
+<div class="caja3">
+    <h4>Calibración Sensor Oxigeno</h4>
+
+    <div id="med2_c">med2_c</div><br>
+    <select id="medx_od">
+          <option value="med1" selected>Medición 1</option>
+          <option value="med2"         >Medición 2</option>
+    </select>
+    <div>
+          <input type="number"
+                 id="od"
+                 style="width: 50px;"
+                 value="50"
+                 MIN="0"
+                 MAX="100"
+                 step="1"
+          />
+          <button  type="submit" class="button_apply"> + </button>
+    </div>
+    <div id="od1_set" ></div>
+    <div id="iod1_set"></div>
+    <div id="od2_set" ></div>
+    <div id="iod2_set"></div>
+</div>
+</form><br><br>
+<!calibrar_od>
+
+
+
+
+
+<!calibrar_actuacion_ph>
+<form hidden id="calibrar_u" method="POST" action='#'>
+  <div class="caja4">
+        <h4>Umbral Actuadores pH</h4>
+        <div> Solución Ácida</div>
+              <input type="number"
+                     id="u_a"
+                     style="width: 50px;"
+                     value="25"
+                     MIN="0"
+                     MAX="150"
+                     step="1"
+              />
+              <button  type="submit" class="button_apply"> + </button>
+
+        <div> Solución Básica</div>
+              <input type="number"
+                     id="u_b"
+                     style="width: 50px;"
+                     value="25"
+                     MIN="0"
+                     MAX="150"
+                     step="1"
+              />
+              <button  type="submit" class="button_apply"> + </button>
+        <div id="rpm_max_a"></div>
+        <div id="rpm_max_b"></div>
+  </div>
+</form><br><br>
+<!calibrar_actuacion_ph>
+
+
+
+<!calibrar_actuacion_temp>
+<form hidden id="calibrar_u_temp" method="POST" action='#'>
+<div class="caja3">
+    <h4>Umbral Actuador Temperatura</h4>
+    <div> RPM Bomba Temperatura</div>
+          <input type="number"
+                 id="u_temp"
+                 style="width: 50px;"
+                 value="25"
+                 MIN="0"
+                 MAX="150"
+                 step="1"
+          />
+          <button  type="submit" class="button_apply"> + </button>
+<div id="rpm_max_temp"></div>
+</div>
+</form><br><br>
+<!calibrar_actuacion_temp>
+
+
+
+
+
+
+</div>
+
+{% endblock %}

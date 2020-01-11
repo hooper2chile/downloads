@@ -1,0 +1,4 @@
+python database.py   >> ./log/my.log.database 2>&1 &
+python app.py        >> ./log/my.log.app      2>&1 &
+python myserial.py   >> ./log/my.log.serial   2>&1 &
+python cloud.py      >> ./log/my.log.cloud    2>&1 &

@@ -1,0 +1,3 @@
+primero, haber ejecturado tzselect con la configuracion horaria para el pais (chile), luego copiar el archivo profile_BASH a ~ para despues copiar el archivo localtime de la carpeta config a /etc como sigue:
+
+sudo cp localtime /etc/

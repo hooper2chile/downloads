@@ -1,0 +1,10 @@
+Primero hacer:
+
+$ tzselect 
+
+Configurar y luego correr el programa rPi3-ap-setup.sh
+
+
+Luego:
+
+$ sudo ./rPi3-ap-setup.sh CONTRASEÑA_WIFI
